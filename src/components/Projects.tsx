@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import ProjectItem from "./ProjectItem";
-import PrKillerImg from "../../public/assets/projects/prKiller.png";
+import ProjectItem from './ProjectItem';
+import PrKillerImg from '../../public/assets/projects/prKiller.png';
 
 export function Projects() {
   return (

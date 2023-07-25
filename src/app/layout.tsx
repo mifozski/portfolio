@@ -1,15 +1,16 @@
-import { Navbar } from '@/components/Navbar'
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import Head from 'next/head'
+import React from 'react';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+import { Navbar } from '@/components/Navbar';
+import './globals.css';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Andrey | Full-stack Developer<',
   description: 'A porfolio for the personal pet projects',
-}
+};
 
 export default function RootLayout({
   children,
@@ -23,5 +24,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }

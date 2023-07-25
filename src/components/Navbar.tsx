@@ -1,27 +1,27 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 export function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [linkColor, setLinkColor] = useState('#1f2937');
 
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname?.includes("projects")) {
-      setNavBg("transparent");
-      setLinkColor("#ecf0f3");
+    if (pathname?.includes('projects')) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
     } else {
-      setNavBg("#ecf0f3");
-      setLinkColor("#1f2937");
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937');
     }
   }, [pathname]);
 
@@ -38,10 +38,10 @@ export function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleShadow);
+    window.addEventListener('scroll', handleShadow);
 
     return () => {
-      window.removeEventListener("scroll", handleShadow);
+      window.removeEventListener('scroll', handleShadow);
     };
   }, []);
 
@@ -50,8 +50,8 @@ export function Navbar() {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? 'fixed w-full h-20 shadow-xl z-[100]'
+          : 'fixed w-full h-20 z-[100]'
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -93,14 +93,14 @@ export function Navbar() {
 
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
           <div>

@@ -1,6 +1,6 @@
-import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import React from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 export function Main() {
   return (
@@ -11,7 +11,9 @@ export function Main() {
             Let&apos;s build something together
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I&apos;m <span className="text-[#5651e5]">Andrey</span>
+            Hi, I&apos;m
+            {' '}
+            <span className="text-[#5651e5]">Andrey</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Full-stack developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">

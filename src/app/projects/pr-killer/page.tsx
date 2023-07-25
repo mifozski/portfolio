@@ -1,9 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import { RiRadioButtonFill } from "react-icons/ri";
+import React from 'react';
+import Image from 'next/image';
+import { RiRadioButtonFill } from 'react-icons/ri';
 
-import Link from "next/link";
-import PrKillerImg from "../../../../public/assets/projects/prKiller.png";
+import Link from 'next/link';
+import PrKillerImg from '../../../../public/assets/projects/prKiller.png';
 
 function PrKiller() {
   return (
