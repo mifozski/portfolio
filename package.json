@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-2",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "scripts": {
+    "serve": "http-server -p 8000 -o",
+    "start": "npm run serve",
+    "deploy": "bash deploy.sh"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

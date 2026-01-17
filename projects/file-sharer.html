@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharer - Andrey Efimov</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/navLogo.png" alt="Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../photos.html" class="nav-link">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Section -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-header">
+                <a href="../index.html#projects" class="project-back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+                <h1 class="project-title">File Sharer</h1>
+                <div class="project-meta">
+                    <span class="project-stack">Electron</span>
+                    <span class="project-stack">TypeScript</span>
+                    <span class="project-stack">WebRTC</span>
+                    <span class="project-stack">Node.js</span>
+                </div>
+            </div>
+            <div class="project-content">
+                <div class="project-image-wrapper">
+                    <img src="../assets/projects/file-sharer.png" alt="File Sharer" class="project-main-image">
+                </div>
+                <div class="project-description">
+                    <h2>About</h2>
+                    <p>A cross-platform file sharing application that enables seamless peer-to-peer file transfers between devices using WebRTC technology. The application supports desktop (Windows, macOS, Linux), Android, iOS, and web clients, allowing users to share files directly between devices without uploading to cloud services.</p>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Peer-to-peer file transfer using WebRTC</li>
+                        <li>Cross-platform support (Desktop, Android, iOS, Web)</li>
+                        <li>Local network discovery for nearby devices</li>
+                        <li>Secure signaling server for connection establishment</li>
+                        <li>Real-time transfer progress and history</li>
+                        <li>Support for files and folders</li>
+                    </ul>
+                    <h2>Technologies</h2>
+                    <p>Built with Electron for desktop clients, TypeScript for type safety, WebRTC for peer-to-peer connections, WebSocket for signaling, Node.js for the signal server, and Firebase for push notifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

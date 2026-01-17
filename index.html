@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrey Efimov - Full-stack Developer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/navLogo.png" alt="Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="photos.html" class="nav-link">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="home" class="main-section">
+        <div class="main-container">
+            <div class="main-content">
+                <p class="main-subtitle">Let's build something together</p>
+                <h1 class="main-title">
+                    Hi, I'm <span class="accent-text">Andrey</span>
+                </h1>
+                <h1 class="main-title">A Full-stack developer</h1>
+                <p class="main-description">
+                    I'm a full-stack web developer specializing in building
+                    responsive digital experiences. Currently, I'm focused on
+                    building responsive front-end web applications while learning
+                    back-end technologies.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="section-label">About</p>
+                    <h2 class="section-title">Who I Am</h2>
+                    <p class="about-text">TO BE FILLED OUT</p>
+                    <p class="about-text">
+                        <a href="#projects" class="text-link">Check out some of my latest projects.</a>
+                    </p>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="assets/me.jpg" alt="Andrey Efimov" class="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <p class="section-label">Skills</p>
+            <h2 class="section-title">What I Can Do</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/html.png" alt="HTML" class="skill-icon">
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/css.png" alt="CSS" class="skill-icon">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/javascript.png" alt="JavaScript" class="skill-icon">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/react.png" alt="React" class="skill-icon">
+                        <h3>React</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/nextjs.png" alt="Next.js" class="skill-icon">
+                        <h3>Next.js</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/node.png" alt="Node.js" class="skill-icon">
+                        <h3>Node.js</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/mongo.png" alt="MongoDB" class="skill-icon">
+                        <h3>MongoDB</h3>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <img src="assets/skills/tailwind.png" alt="Tailwind CSS" class="skill-icon">
+                        <h3>Tailwind CSS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <p class="section-label">Projects</p>
+            <h2 class="section-title">What I've Built</h2>
+            <div class="projects-grid">
+                <a href="projects/pr-killer.html" class="project-card">
+                    <img src="assets/projects/prKiller.png" alt="PR Killer" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">PR Killer</h3>
+                        <p class="project-tech">Unity, C#</p>
+                        <span class="project-link">More Info</span>
+                    </div>
+                </a>
+                <a href="projects/quick-switcher.html" class="project-card">
+                    <img src="assets/projects/quick-switcher-2.png" alt="Quick Switcher" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Quick Switcher</h3>
+                        <p class="project-tech">Electron, TypeScript</p>
+                        <span class="project-link">More Info</span>
+                    </div>
+                </a>
+                <a href="projects/file-sharer.html" class="project-card">
+                    <img src="assets/projects/file-sharer.png" alt="File Sharer" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">File Sharer</h3>
+                        <p class="project-tech">Electron, TypeScript, WebRTC</p>
+                        <span class="project-link">More Info</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <p class="section-label">Contact</p>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-image-wrapper">
+                        <img src="assets/contact.jpg" alt="Contact" class="contact-image">
+                    </div>
+                    <div class="contact-details">
+                        <h2>Andrey Efimov</h2>
+                        <p>Full-stack Developer</p>
+                        <p class="contact-text">I am available for full-time positions. Contact me and let's talk.</p>
+                    </div>
+                    <div class="contact-social">
+                        <p class="contact-social-label">Connect with me</p>
+                        <div class="contact-social-links">
+                            <a href="#" class="contact-social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="contact-social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="contact-social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" rows="10" class="form-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="form-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="scroll-top">
+                <a href="#home" class="scroll-top-link" aria-label="Scroll to top">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

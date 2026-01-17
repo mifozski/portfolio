@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos - Andrey Efimov</title>
+    <link rel="stylesheet" href="styles/photos.css">
+</head>
+<body>
+    <!-- Minimal Navigation -->
+    <nav class="photos-nav">
+        <div class="photos-nav-container">
+            <a href="index.html" class="photos-nav-logo">Andrey Efimov</a>
+            <a href="index.html" class="photos-nav-back">← Back</a>
+        </div>
+    </nav>
+
+    <!-- Photos Header -->
+    <header class="photos-header">
+        <h1 class="photos-title">Photos</h1>
+        <p class="photos-subtitle">A collection of moments captured through the lens</p>
+    </header>
+
+    <!-- Photos Grid -->
+    <main class="photos-main">
+        <div class="photos-grid" id="photos-grid">
+            <!-- Add your photos here -->
+            <!-- Replace the placeholder images with your actual photos -->
+            <!-- Example:
+            <div class="photo-item">
+                <img src="assets/photos/your-photo-1.jpg" alt="Description" class="photo-image" loading="lazy">
+            </div>
+            -->
+            
+            <!-- Placeholder structure - replace with your photos -->
+            <div class="photo-item">
+                <img src="assets/photos/IMG_2379.JPG" alt="Photo 1" class="photo-image" loading="lazy">
+            </div>
+            <div class="photo-item">
+                <img src="assets/photos/IMG_2388.JPG" alt="Photo 2" class="photo-image" loading="lazy">
+            </div>
+        </div>
+    </main>
+
+    <!-- Photo Modal -->
+    <div class="photo-modal" id="photo-modal">
+        <button class="photo-modal-close" id="photo-modal-close" aria-label="Close modal">
+            <span>&times;</span>
+        </button>
+        <img src="" alt="" class="photo-modal-image" id="photo-modal-image">
+        <div class="photo-modal-nav">
+            <button class="photo-modal-prev" id="photo-modal-prev" aria-label="Previous photo">‹</button>
+            <button class="photo-modal-next" id="photo-modal-next" aria-label="Next photo">›</button>
+        </div>
+    </div>
+
+    <script src="scripts/photos.js"></script>
+</body>
+</html>
