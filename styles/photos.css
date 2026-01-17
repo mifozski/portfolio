@@ -92,6 +92,25 @@ body {
     padding: 2rem;
 }
 
+/* Photo Collections */
+.photo-collection {
+    margin-bottom: 4rem;
+}
+
+.photo-collection:last-child {
+    margin-bottom: 2rem;
+}
+
+.collection-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 /* Photos Grid */
 .photos-grid {
     display: grid;
@@ -241,6 +260,15 @@ body {
 
     .photos-main {
         padding: 1rem;
+    }
+
+    .photo-collection {
+        margin-bottom: 3rem;
+    }
+
+    .collection-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
     }
 
     .photo-modal-close {
