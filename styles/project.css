@@ -45,6 +45,32 @@
     font-weight: 500;
 }
 
+.project-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.project-demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #5651e5;
+    color: #fff;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-demo-link:hover {
+    background-color: #4842c7;
+    transform: translateY(-1px);
+}
+
 .project-content {
     display: grid;
     grid-template-columns: 1fr;

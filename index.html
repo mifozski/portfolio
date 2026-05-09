@@ -198,6 +198,14 @@
             <p class="section-label">Projects</p>
             <h2 class="section-title">What I've Built</h2>
             <div class="projects-grid">
+                <a href="projects/mininote.html" class="project-card">
+                    <img src="assets/projects/mininote.png" alt="MiniNote - Real-time collaborative note-taking PWA with folders and rich-text editing" class="project-image" width="600" height="400">
+                    <div class="project-overlay">
+                        <h3 class="project-title">MiniNote</h3>
+                        <p class="project-tech">TypeScript, Loro CRDT, ProseMirror</p>
+                        <span class="project-link">More Info</span>
+                    </div>
+                </a>
                 <a href="projects/pr-killer.html" class="project-card">
                     <img src="assets/projects/prKiller.png" alt="PR Killer - Unity game project by Andrey Efimov" class="project-image" width="600" height="400">
                     <div class="project-overlay">
@@ -257,7 +265,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form">
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/mifozski@gmail.com" method="POST">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="name" class="form-label">Name</label>
@@ -280,6 +288,9 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea id="message" name="message" rows="10" class="form-textarea" required></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New portfolio contact message">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
                         <button type="submit" class="form-button">Send Message</button>
                     </form>
                 </div>
