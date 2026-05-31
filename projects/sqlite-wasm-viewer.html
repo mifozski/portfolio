@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLite Wasm Viewer - OPFS Database Browser | Andrey Efimov</title>
+    <meta name="description" content="SQLite Wasm Viewer is a web-based SQLite browser for inspecting databases created by the SQLite Wasm module and stored in OPFS. Browse tables, filter rows, edit cells, and run SQL queries. Published as an npm package.">
+    <meta name="keywords" content="SQLite, WebAssembly, OPFS, database viewer, TypeScript, npm, SQL browser, Andrey Efimov">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mysticeggs.xyz/projects/sqlite-wasm-viewer.html">
+    <meta property="og:title" content="SQLite Wasm Viewer - OPFS Database Browser | Andrey Efimov">
+    <meta property="og:description" content="A web-based SQLite browser for OPFS databases with table browsing, filtering, cell editing, and SQL execution.">
+    <meta property="og:image" content="https://mysticeggs.xyz/assets/projects/sqlite-wasm-viewer.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mysticeggs.xyz/projects/sqlite-wasm-viewer.html">
+    <meta property="twitter:title" content="SQLite Wasm Viewer - OPFS Database Browser | Andrey Efimov">
+    <meta property="twitter:description" content="A web-based SQLite browser for OPFS databases with table browsing, filtering, cell editing, and SQL execution.">
+    <meta property="twitter:image" content="https://mysticeggs.xyz/assets/projects/sqlite-wasm-viewer.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mysticeggs.xyz/projects/sqlite-wasm-viewer.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/navLogo.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SQLite Wasm Viewer",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "url": "https://www.npmjs.com/package/sqlite-wasm-viewer",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "Andrey Efimov"
+      },
+      "description": "An SQLite OPFS database viewer that enables database inspection and SQL command execution.",
+      "screenshot": "https://mysticeggs.xyz/assets/projects/sqlite-wasm-viewer.png"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/navLogo.png" alt="Andrey Efimov Portfolio Logo" class="logo-img" width="40" height="40">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../photos.html" class="nav-link">Photos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Section -->
+    <section class="project-section">
+        <div class="container">
+            <div class="project-header">
+                <a href="../index.html#projects" class="project-back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+                <h1 class="project-title">SQLite Wasm Viewer</h1>
+                <div class="project-meta">
+                    <span class="project-stack">TypeScript</span>
+                    <span class="project-stack">SQLite Wasm</span>
+                    <span class="project-stack">OPFS</span>
+                    <span class="project-stack">Web Workers</span>
+                    <span class="project-stack">Webpack</span>
+                </div>
+                <div class="project-actions">
+                    <a href="https://www.npmjs.com/package/sqlite-wasm-viewer" class="project-demo-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-external-link-alt"></i> npm
+                    </a>
+                    <a href="https://github.com/mifozski/sqlite-wasm-viewer" class="project-demo-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="project-content">
+                <div class="project-image-wrapper">
+                    <img src="../assets/projects/sqlite-wasm-viewer.png" alt="SQLite Wasm Viewer - Web-based SQLite browser for OPFS databases" class="project-main-image" width="1200" height="800">
+                </div>
+                <div class="project-description">
+                    <h2>About</h2>
+                    <p>SQLite Wasm Viewer is a web-based SQLite browser for inspecting databases created by the <a href="https://github.com/sqlite/sqlite-wasm" class="text-link" target="_blank" rel="noopener noreferrer">SQLite Wasm module</a> and stored in OPFS. It ships as an npm library you can drop into any app that uses SQLite in the browser &mdash; call <code>showViewer()</code> and get a full database inspector with no server required.</p>
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Automatic discovery of SQLite databases in OPFS storage</li>
+                        <li>Explorer tree for browsing databases and tables</li>
+                        <li>Virtualized table view for smooth scrolling over large datasets</li>
+                        <li>Per-column filtering with live query updates</li>
+                        <li>In-place cell editing with save and revert via SQLite savepoints</li>
+                        <li>Ad-hoc SQL execution panel and query log</li>
+                        <li>Resizable three-panel layout</li>
+                        <li>Database operations offloaded to a Web Worker</li>
+                        <li>Configurable database file detection</li>
+                    </ul>
+                    <h2>Technologies</h2>
+                    <p>Built with TypeScript and compiled for distribution via Babel. Database access runs through <code>@sqlite.org/sqlite-wasm</code> inside a dedicated Web Worker, while the UI uses vanilla DOM APIs with a custom list virtualizer for table rendering. OPFS via the File System Access API is used to scan and resolve database files.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
